@@ -1,11 +1,332 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    display: grid;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    align-items: right;
+}
+
+
+header{
+    background-color: #ffffff;
+    font-size: 18px; 
+    
+}
+
+header .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+
+    color: #6b7280;
+    float: right;
+}
+nav a{
+    color: #6b7280;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    /*overflow: hidden;*/
+}
+a{
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding:10px 5px;
+
+}
+
+li{
+    position: relative;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    float: right;
+    flex-direction: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li:before{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color:#5A67D8 ;
+    right: 0;
+    z-index: 0;
+    top:33.33%;  
+    transition: all 0.5s;
+}
+li:after{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color:#5A67D8 ;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+a:before{
+    position: absolute;
+    content:"";
+    height: 33.33%;
+    width: 0;
+    background-color: #5A67D8;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+}
+li:hover:before,
+li:hover:after,
+li:hover a:before{
+    width:100%;
+}
+
+
+header h1{
+    font-size: 18px;
+    grid-row: 5;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+header h2{
+    align-items: left  ;
+}
+
+
+
+/*img[src="image.png"]{
+    padding:10px;
+    width:10px;
+    height:10px;
+    align-items: left;
+    background-color: #6b7280;
+    text-align: right;}*/
+
+/**img[src="Healthy Lifestyle.png"]{
+    padding:20px;
+    width:200px;
+    height:150px;
+    align-items: center;
+    
+}
+img[src="Fitness.png"]{
+    padding:20px;
+    width:200px;
+    height:150px;
+}
+img[src="AI.png"]{
+    padding:20px;
+    width:200px;
+    height:150px;
+}
+/**img[src="dr.jpg"]{
+    border-radius:100%;
+    padding:30px;
+    width:200px;
+    height:180px;
+    float: left; 
+}*/
+/**img[src="chris.jpg"]{
+    border-radius:100%;
+    padding:30px;
+    width:200px;
+    height:180px;
+    float: left;
+  
+}*/
+
+.card img   
+{
+  width: 250px;
+  height: 250px;
+}
+
+.card 
+{
+  border: 1px solid ;
+  border-radius: 5px;
+  box-shadow: 5px 10px #E2E8F0;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  float: left;
+  margin:5px;
+  width: 280px;
+  height: 580px;
+}
+.cards
+ {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;  
+}
+.card-body{
+    padding: 30px 20px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.testing{
+    text-align: left;
+    background-color:#4A5568;
+    margin: 25px 25px;
+
+}
+.testing{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.testing .container{
+    display: flex;
+    padding:10px 30px;
+    width:100%;
+}
+
+.cta{
+    width: 200px;
+    margin: 0px 15px;
+
+}
+.testing .btn {
+   background-color: #48BB48;
+   position: relative;
+   top: 46%;
+   right:27%;
+   border-radius: 5px;
+   border: 4px solid  #48BB48;
+   transition: all 0.3s ease-in-out;
+
+   
+}
+
+.testing .btn:hover{
+    background: none;
+    color:white;
+}
+
+
+.overview-hero-image{
+    float: left; 
+    padding: right 100px;;
+}
+.overview-hero-image img{
+    height:200px;
+    width:200px;
+}
+.overview-hero-text{
+    margin:auto 0;
+    
+}
+.overview-hero{
+    background-color: #b8b6b6;
+
+
+}
+.overview-hero .container{
+    background-blend-mode: #6b7280;
+}
+.overview-hero-image {
+    background-color:#b8b6b6;
+}
+.overview-hero {
+    display:flex;
+}
+.learn-about{
+    text-decoration-color: #48bb78;
+    text-size-adjust: 24px;
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learn-about h3{
+    color: #48BB48;
+}
+.learn-about h2{
+    font-size: 24px;
+    color: #48bb78;
+}
+.testing-desciption{
+    color: white;
+}
+.stories img{
+    height: 150px;
+    width: 150px;
+    float: left;
+    padding: 20px;
+    margin-right: 50px;
+    border-radius: 50%;
+
+}
+
+.stories a{
+    color:#5A67D8;
+}
+
+
+.newsletter{
+    background-color: #48BB48;
+    color: white;
+    height:300px;
+    display: flex;
+    align-items: center;
+    
+}
+.newsletter .btn{
+    border-radius: 5px;
+    margin-left: 20px;
+    background: #5A67D8;
+    color:white;
+}
+.newsletter .container{
+    margin-bottom: 30px;
+
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+input{
+    border-radius: 5px;
+    width: 300px;
+     height: 40px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    color: white;
+    background-color: #4A5568;
 }
